@@ -1,0 +1,25 @@
+{
+  "name": "Padrões de desenvolvimento web",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+//custumizar o vs code
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      
+      //extensoes utilizadadas
+      "extensions": [
+        "ms-azuretools.vscode-containers",
+        "vscjava.vscode-java-pack",
+        "redhat.vscode-quarkus",
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "",
+  // comando de inicio do ambiente quando liga vs code
+  "postStartCommand": "service mysql start"
+}
